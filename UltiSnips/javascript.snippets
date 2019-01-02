@@ -244,3 +244,18 @@ endsnippet
 snippet ir "isRequired" w
 isRequired,
 endsnippet
+
+
+snippet rnfc "React Native Functional Component" b
+import React from 'react';
+import { View } from 'react-native';
+
+function ${1:`!v expand('%:t:r')`}(${3:props}) {
+	return (
+		<View />
+	);
+}
+
+export default $1;
+endsnippet
+
